@@ -1,10 +1,19 @@
-const links = document.querySelectorAll('a[href^="#"]');
+const revealItems = document.querySelectorAll('.reveal');
 
-links.forEach((link) => {
+const revealObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add('visible');
+    observer.unobserve(entry.target);
+  });
+}, { threshold: 0.14 });
+
+revealItems.forEach((item) => revealObserver.observe(item));
+
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener('click', (event) => {
     const target = document.querySelector(link.getAttribute('href'));
     if (!target) return;
-
     event.preventDefault();
     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
