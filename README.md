@@ -1,13 +1,13 @@
 # ortal83cohen.github.io
 
-עמוד תדמית סטטי ליצירת Publisher ב־pub.dev.
+A static promotional page for creating a Publisher on pub.dev.
 
-## הרצה
+## Run
 
-אפשר לפתוח את `index.html` ישירות בדפדפן, או להריץ שרת מקומי:
+Open `index.html` directly in a browser, or run a local server:
 
 ```bash
 python3 -m http.server 8080
 ```
 
-העמוד מוכן לפרסום ב־GitHub Pages.
+The page is ready to deploy on GitHub Pages.

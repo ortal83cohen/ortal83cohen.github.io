@@ -25,7 +25,7 @@ a { color: inherit; text-decoration: none; }
 .header-link:hover { border-color: var(--teal); color: var(--teal); }
 .hero { min-height: 640px; padding: 90px 6vw 110px; }
 .section-grid { display: grid; gap: 5vw; grid-template-columns: .9fr 1.1fr; }
-.hero-copy { align-self: center; direction: rtl; max-width: 520px; }
+.hero-copy { align-self: center; max-width: 520px; }
 .eyebrow { align-items: center; color: var(--teal); display: flex; font-family: var(--mono); font-size: 11px; gap: 11px; letter-spacing: .03em; margin: 0 0 24px; }
 .eyebrow-line { background: var(--teal); display: inline-block; height: 1px; width: 28px; }
 h1, h2, h3, p { margin-top: 0; }
